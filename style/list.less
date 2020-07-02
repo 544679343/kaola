@@ -1,0 +1,1379 @@
+@charset "utf-8";
+/* 版心区域有公共样式 */
+#topNavWrap,#searchWrap,#footWrap{
+    width: 1090px;
+    margin: 0 auto;
+}
+#banner,#body{
+    color: #333;
+    padding: 0;
+    width: 1000px;
+    margin: 0 auto;
+}
+.miss{
+    display: none;
+}
+body{
+    min-width: 1090px;
+    min-height: 100%;
+    background-color: #f0f0f0;
+}
+
+// 顶部导航栏
+#topNav{
+    position: relative;
+    z-index: 106;
+    background: #000;
+    border-bottom: 1px solid #ededee;
+    color: #999;
+    font-size: 12px;
+    #topNavWrap {
+        position: relative;
+        zoom: 1;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        width: 1090px;
+    }
+    .sep {
+        color: #ccc;
+        visibility: hidden;
+    }
+    #topNavLeft{
+        float: left;
+        .sep {
+            padding: 0 10px;
+        }
+    }
+    #topNavLeft2{
+        float: left;
+        padding-left: 30px;
+        .app{
+            position: relative;
+            zoom: 1;
+            .m-notice {
+                position: absolute;
+                left: -30px;
+                top: 35px;
+                *top: 42px;
+                padding: 5px 5px 0;
+                display: none;
+                .txt {
+                    display: block;
+                    padding: 4px 0;
+                    font-size: 14px;
+                    color: #ff1e32;
+                    line-height: 18px;
+                    font-weight: 400;
+                }
+                img{
+                    border: 0;
+                    font-size: 12px;
+                    line-height: 30px;
+                    text-align: center;
+                    width: 116px;
+                    height: 116px;
+                    border: 0;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                
+            }
+        }
+    }
+    #topNavRight{
+        font-size: 12px;
+        float: right;
+        position: relative;
+        right: -3px;
+        li {
+            float: left;
+        }
+        .toplevel{
+            padding: 0 14px 0 8px;
+        }
+    }
+    
+    .login{
+        margin-left: 16px;
+    }
+    a{
+        color: #999;
+    }
+    
+}
+
+// 搜索
+#search{
+    background: #fff;
+    z-index: 103;
+    #searchWrap{
+        position: relative;
+        height: 100px;
+        padding: 0;
+        position: relative;
+        height: 100px;
+        zoom: 1;
+        width: 1090px;
+        margin: 0 auto;
+        .shopcar{
+            outline: none;
+            color:#333;
+            display: block;
+            position: absolute;
+            right: 76px;
+            top: 33px;
+            width: 106px;
+            height: 36px;
+            background-color: #fff;
+            line-height: 36px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 36px;
+            border: 2px solid #ff1e32;
+            text-decoration: none;
+            
+        }
+        .searchBox{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 343px;
+            top: 33px;
+            z-index: 73;
+            #topsearchbox{
+                margin: 0;
+                padding: 0;
+                #topsearch{
+                    margin: 0;
+                    padding: 0;
+                    width: 510px;
+                    height: 40px;
+                    padding-left: 1px;
+                    background-color: #ff2337;
+                    border-radius: 40px;
+                    .wrap{
+                        white-space: normal;
+                        word-wrap: break-word;
+                        float: left;
+                        margin: 2px 1px;
+                        padding: 6px 39px 6px 30px;
+                        background-color: #fff;
+                        border-radius: 24px 0 0 24px;
+                        #topSearchInput{
+                            white-space: normal;
+                            margin: 0;
+                            padding: 0;
+                            vertical-align: middle;
+                            display: inline-block;
+                            outline: none;
+                            font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,\5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+                            width: 410px;
+                            height: 24px;
+                            line-height: 24px;
+                            border: 0;
+                            font-size: 13px;
+                        }
+                    }
+                    .topsearchboxBackGround{
+                        width: 60px;
+                        height: 40px;
+                        background: #ff2337;
+                        background-image: linear-gradient(270deg,#ff2e64,#ff0003);
+                        border-radius: 40px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        #topSearchBtn{
+                            border-radius: 0 3px 3px 0;
+                            display: inline-block;
+                            height: 40px;
+                            width: 50px;
+                            font-size: 19px;
+                            line-height: 40px;
+                            color: #fff;
+                            text-align: center;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 0;
+                            right: 5px;
+                            background: url(../img/search.jpg) no-repeat 50%;
+                            background-image: url(../img/search.jpg) 2x;
+                            .shopSearchBtnTitle{
+                                font-size: 19px;
+                                line-height: 40px;
+                                color: #fff;
+                                text-align: center;
+                                cursor: pointer;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .shopSearchchboxBackGround{
+                    display: none;
+                }
+            }
+        }
+    }
+    .logo{
+        color: #51b8f1;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 330px;
+        height: 65px;
+        line-height: 65px;
+        outline: none;
+        cursor: pointer;
+        z-index: 9;
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: auto 65px;
+        text-decoration: none;
+        background-image: url(../img/logo.jpg);
+    }
+    
+}
+#searchWrap {
+    zoom: 1;
+    width: 1090px;
+    margin: 0 auto;
+}
+
+//二级菜单
+#topTabBox{
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    z-index: 102;
+    #topTab{
+        padding: 0;
+        zoom: 1;
+        width: 1090px;
+        margin: 0 auto;
+        line-height: 40px;
+        z-index: 102;
+        position: relative;
+        height: 40px;
+        #funcTab{
+            line-height: 40px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            zoom: 1;
+            position: relative;
+            height: 40px;
+            z-index: 72;
+            float: left;
+            padding-left: 25px;
+            .active{
+                a{
+                    color: #ff1e32;
+                }
+            }
+            li {
+                line-height: 40px;
+                list-style: none;
+                margin: 0;
+                float: left;
+                height: 40px;
+                overflow: hidden;
+                padding: 0 20px;
+
+                a{
+                    line-height: 40px;
+                    list-style: none;
+                    outline: none;
+                    display: block;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    background: #fff;
+                    color:#333;
+
+                    
+                }
+            }
+        }
+        #toplist{
+            line-height: 40px;
+            margin: 0;
+            padding: 0;
+            float: left;
+            height: 40px;
+            width: 164px;
+            background: linear-gradient(90deg,red,#ff3264);
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            padding-left: 0;
+            overflow: visible;
+            .toplevel{
+                color: #fff;
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                width: 164px;
+                text-align: left;
+                border-bottom: 1px solid #ff5160;
+                .lineicon{
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 40px;
+                    text-align: left;
+                    padding: 0;
+                    display: inline-block;
+                    margin: 0 24px 0 15px;
+                    width: 15px;
+                    height: 12px;
+                    overflow: hidden;
+                    i{
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 40px;
+                        text-align: left;
+                        font-style: normal;
+                        font-weight: 500;
+                        width: 15px;
+                        height: 0;
+                        border-top: 2px solid #ddd;
+                        display: block;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    
+        .menu{
+            line-height: 40px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: linear-gradient(to right,#f00,#ff3264);
+            display: none;
+            .menu1{
+                color: #fff;
+                font-size: 14px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                padding-left: 10px;
+                width: 151px;
+                cursor: pointer;
+                text-align: left;
+                padding-right: 3px;
+                background: linear-gradient(90deg,red,#ff3264);
+                height: 38.333333333333336px;
+                line-height: 38.333333333333336px;
+                .icon{
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                    margin: 0 18px 0 1px;
+                    color: #fff;
+                    font-size: 14px;
+                    list-style: none;
+                    cursor: pointer;
+                    text-align: left;
+                    line-height: 38.333333333333336px;
+                    border: 0;
+                    display: inline-block;
+                    
+                }
+                .iconhv{
+                    color: #fff;
+                    font-size: 14px;
+                    list-style: none;
+                    cursor: pointer;
+                    text-align: left;
+                    line-height: 38.333333333333336px;
+                    border: 0;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                    padding: 0 20px 0 4px;
+                    display: none;
+                }
+                .t{
+                    color: #fff;
+                    font-size: 14px;
+                    list-style: none;
+                    cursor: pointer;
+                    text-align: left;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 70px;
+                    height: 30px;
+                    line-height: 30px;
+                    white-space: nowrap;
+                }
+                .tableft{
+                    list-style: none;
+                    cursor: pointer;
+                    text-align: left;
+                    line-height: 38.333333333333336px;
+                    font-weight: 500;
+                    font-family: naviconfont!important;
+                    font-style: normal;
+                    -webkit-font-smoothing: antialiased;
+                    -webkit-text-stroke-width: .2px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #ff96ad;
+                    font-size: 19px;
+                    width: 16px;
+                }
+                .vcenter{
+                    color: #fff;
+                    font-size: 14px;
+                    list-style: none;
+                    cursor: pointer;
+                    text-align: left;
+                    line-height: 38.333333333333336px;
+                    font-style: normal;
+                    font-weight: 500;
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 100%;
+                    width: 0;
+                }
+                .seg{
+                    color: #fff;
+                    font-size: 14px;
+                    list-style: none;
+                    cursor: pointer;
+                    text-align: left;
+                    line-height: 38.333333333333336px;
+                    font-style: normal;
+                    font-weight: 500;
+                    display: block;
+                    position: relative;
+                    bottom: 2px;
+                    left: -7px;
+                    width: 154px;
+                    height: 1px;
+                    background: #ff5160;
+                    margin-top: -1px;
+                }
+                .card{
+                    font-size: 14px;
+                    list-style: none;
+                    line-height: 38.333333333333336px;
+                    margin: 0;
+                    padding: 0;
+                    zoom: 1;
+                    transition: height .4s;
+                    position: absolute;
+                    z-index: 75;
+                    top: 40px;
+                    left: 164px;
+                    width: 930px;
+                    overflow: hidden;
+                    max-height: 459px;
+                    height: 459px;
+                    background: #fff;
+                    border: 1px solid #ff1a33;
+                    border-left-width: 0;
+                    text-align: left;
+                    cursor: auto;
+                    display: none;
+                    .m-ctglist{
+                        font-size: 14px;
+                        list-style: none;
+                        line-height: 38.333333333333336px;
+                        text-align: left;
+                        cursor: auto;
+                        padding: 0;
+                        float: left;
+                        margin: 0 20px 20px 15px;
+                        width: 658px;
+                        max-height: 443px;
+                        overflow: hidden;
+                        .m-ctgtbl{
+                            overflow: hidden;
+                            list-style: none;
+                            line-height: 38.333333333333336px;
+                            text-align: left;
+                            color: #333;
+                            cursor: auto;
+                            margin: 0;
+                            padding: 0;
+                            width: 100%;
+                            font-size: 0;
+                            .f-cb{
+                                list-style: none;
+                                line-height: 38.333333333333336px;
+                                text-align: left;
+                                cursor: auto;
+                                font-size: 0;
+                                width: 685px;
+                                height: 187px;
+                                margin: 0;
+                                padding: 0;
+                                zoom: 1;
+                                .litd{
+                                    list-style: none;
+                                    line-height: 38.333333333333336px;
+                                    text-align: left;
+                                    cursor: auto;
+                                    font-size: 0;
+                                    margin: 0;
+                                    padding: 0;
+                                    float: left;
+                                    width: 50%;
+                                    vertical-align: top;
+                                    position: relative;
+                                    .underTitleMiddleLine{
+                                        list-style: none;
+                                        line-height: 38.333333333333336px;
+                                        text-align: left;
+                                        cursor: auto;
+                                        font-size: 0;
+                                        margin: 0;
+                                        padding: 0;
+                                        height: 1px;
+                                        width: 642px;
+                                        background: #eaeaea;
+                                        position: absolute;
+                                        top: 34px;
+                                    }
+                                    .item{
+                                        list-style: none;
+                                        text-align: left;
+                                        cursor: auto;
+                                        font-size: 0;
+                                        display: inline-block;
+                                        padding: 0;
+                                        margin: 0 25px 17px 5px;
+                                        vertical-align: top;
+                                        width: 275px;
+                                        height: auto;
+                                        line-height: normal;
+                                        overflow: hidden;
+                                        .title{
+                                            list-style: none;
+                                            text-align: left;
+                                            color: #333;
+                                            cursor: auto;
+                                            margin: 0;
+                                            padding: 0;
+                                            height: 34px;
+                                            line-height: 34px;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            .cat2{
+                                                list-style: none;
+                                                line-height: 34px;
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                                outline: none;
+                                                text-decoration: none;
+                                                display: inline;
+                                                color: #333;
+                                                text-align: left;
+                                            }
+                                        }
+                                        .ctgnamebox{
+                                            list-style: none;
+                                            text-align: left;
+                                            cursor: auto;
+                                            line-height: normal;
+                                            margin: 0;
+                                            padding: 0;
+                                            margin-left: -8px;
+                                            font-size: 0;
+                                            .f-fcred3{
+                                                list-style: none;
+                                                text-align: left;
+                                                outline: none;
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                height: 14px;
+                                                line-height: 14px;
+                                                padding: 0 10px;
+                                                margin-top: 20px;
+                                                font-size: 13px;
+                                                color: #ff1e32;
+                                            }
+                                            .f-fcred{
+                                                list-style: none;
+                                                text-align: left;
+                                                outline: none;
+                                                text-decoration: none;
+                                                display: inline-block;
+                                                height: 14px;
+                                                line-height: 14px;
+                                                padding: 0 10px;
+                                                margin-top: 20px;
+                                                font-size: 13px;
+                                                color: #666;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .m-brandbox{
+                        font-size: 14px;
+                        list-style: none;
+                        line-height: 38.333333333333336px;
+                        text-align: left;
+                        cursor: auto;
+                        margin: 0;
+                        float: left;
+                        height: 331px;
+                        overflow: hidden;
+                        width: 236px;
+                        padding: 9px 8px 0 11px;
+                        background: #f6f6f6;
+                        .brandlist{
+                            list-style: none;
+                            line-height: 38.333333333333336px;
+                            text-align: left;
+                            cursor: auto;
+                            margin: 0;
+                            padding: 0;
+                            zoom: 1;
+                            font-size: 0;
+                            a{
+                                list-style: none;
+                                line-height: 38.333333333333336px;
+                                text-align: left;
+                                font-size: 0;
+                                outline: none;
+                                text-decoration: none;
+                                color: #51b8f1;
+                                float: left;
+                                padding: 0;
+                                img{
+                                    list-style: none;
+                                    line-height: 38.333333333333336px;
+                                    text-align: left;
+                                    font-size: 0;
+                                    color: #51b8f1;
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    width: 104px;
+                                    height: 104px;
+                                    border: 1px solid #eaeaea;
+                                    margin: 0 3px 2px 0;
+                                }
+                            }
+                        }
+                    }
+                    .imgbox{
+                        font-size: 14px;
+                        list-style: none;
+                        line-height: 38.333333333333336px;
+                        text-align: left;
+                        cursor: auto;
+                        margin: 0;
+                        float: right;
+                        width: 237px;
+                        box-sizing: border-box;
+                        padding: 20px 18px 20px 11px;
+                        background: #f6f6f6;
+                        a{
+                            font-size: 14px;
+                            list-style: none;
+                            line-height: 38.333333333333336px;
+                            text-align: left;
+                            outline: none;
+                            text-decoration: none;
+                            color: #51b8f1;
+                            padding: 0;
+                            .u-img{
+                                font-size: 14px;
+                                list-style: none;
+                                line-height: 38.333333333333336px;
+                                text-align: left;
+                                color: #51b8f1;
+                                border: 0;
+                                vertical-align: middle;
+                                display: inline-block;
+                                border-radius: 3px;
+                                width: 215px;
+                                height: 88px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+    
+}
+
+// banner
+#banner{
+    #bannerwrap{
+        color: #333;
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+        width: 1000px;
+        .listbanner{
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 409px;
+            .imgwrap{
+                color: #333;
+                font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,\5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 100%;
+                background-position: center 0;
+                width: 1519px;
+                margin-left: -759.5px;
+                background-size: 1920px 409px;
+                background-image: url(../img/listimg.jpg);
+            }
+        }
+    }
+}
+
+//主体
+#body{
+    #bodyWrap{
+        width: 1000px;
+        margin: 0 auto;
+        #glist{
+            color: #333;
+            margin: 0;
+            padding: 0;
+            margin-top: 0px;
+            background-color: rgb(163, 208, 241);
+            height: 638px;
+            .m-fenceTitle{
+                margin: 10px 0;
+                padding: 0 5px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                font-size: 28px;
+                color: rgb(51, 51, 51);
+                background-color: rgb(163, 208, 241);
+            }
+            .m-module{
+                color: #333;
+                margin: 0;
+                padding: 0;
+                .listgoods{
+                    color: #333;
+                    margin: 0;
+                    padding: 0;
+                    .m-goods{
+                        color: #333;
+                        margin: 0;
+                        padding: 0;
+                        display: block;
+                        overflow: visible!important;
+                        .goods-list{
+                            color: #333;
+                            margin: 0;
+                            list-style: none;
+                            zoom: 1;
+                            padding: 0 2.5px;
+                            overflow: visible!important;
+                            .g-col{
+                                color: #333;
+                                list-style: none;
+                                margin: 0;
+                                box-sizing: border-box;
+                                float: left;
+                                white-space: nowrap;
+                                min-height: 1px;
+                                padding: 0 2.5px 5px;
+                                overflow: visible;
+                                position: relative;
+                                width: 20%;
+                                height: 284px;
+                                .goods-bd{
+                                    color: #333;
+                                    list-style: none;
+                                    white-space: nowrap;
+                                    margin: 0;
+                                    padding: 0;
+                                    width: 100%;
+                                    position: relative;
+                                    .goods-bd-border{
+                                        color: #333;
+                                        list-style: none;
+                                        white-space: nowrap;
+                                        margin: 0;
+                                        padding: 0 0 10px;
+                                        background: #fff;
+                                        position: relative;
+                                        border: 1px solid rgb(163, 208, 241);
+                                        .goods-img{
+                                            color: #333;
+                                            list-style: none;
+                                            white-space: nowrap;
+                                            margin: 0;
+                                            padding: 100% 0 0;
+                                            overflow: hidden;
+                                            position: relative;
+                                            z-index: 1;
+                                            a{
+                                                list-style: none;
+                                                white-space: nowrap;
+                                                outline: none;
+                                                text-decoration: none;
+                                                color: #51b8f1;
+                                                .img{
+                                                    list-style: none;
+                                                    white-space: nowrap;
+                                                    color: #51b8f1;
+                                                    border: 0;
+                                                    vertical-align: middle;
+                                                    display: inline-block;
+                                                    animation: fadeIn .5s linear;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: 0;
+                                                }
+                                            }
+                                            .m-tagitem{
+                                                color: #333;
+                                                list-style: none;
+                                                white-space: nowrap;
+                                                margin: 0;
+                                                padding: 0;
+                                                left: 0;
+                                                top: 0;
+                                                right: 0;
+                                                display: flex;
+                                                flex-direction: row-reverse;
+                                                position: absolute;
+                                            }
+                                            .m-tagitem2{
+                                                color: #333;
+                                                list-style: none;
+                                                white-space: nowrap;
+                                                margin: 0;
+                                                padding: 0;
+                                                position: absolute;
+                                                height: 100%;
+                                                width: 0;
+                                                overflow: visible;
+                                                top: 0;
+                                                left: 0;
+                                                .u-tagbtn{
+                                                    list-style: none;
+                                                    margin: 0;
+                                                    display: inline-block;
+                                                    padding: 0 5px 0 3px;
+                                                    white-space: nowrap;
+                                                    height: 20px;
+                                                    background: #ff8385;
+                                                    border-radius: 0;
+                                                    color: #fff;
+                                                    font-size: 12px;
+                                                    line-height: 20px;
+                                                }
+                                            }
+                                            .m-tagitem3{
+                                                color: #333;
+                                                list-style: none;
+                                                white-space: nowrap;
+                                                margin: 0;
+                                                padding: 0;
+                                                position: absolute;
+                                                left: 15px;
+                                                bottom: 0;
+                                                .u-tagbtn{
+                                                    list-style: none;
+                                                    margin: 0;
+                                                    display: inline-block;
+                                                    padding: 0 5px 0 3px;
+                                                    white-space: nowrap;
+                                                    height: 15px;
+                                                    border: 1px solid #e31436;
+                                                    border-radius: 3px;
+                                                    background: #fff;
+                                                    color: #e31436;
+                                                    font-size: 12px;
+                                                    line-height: 15px;
+                                                }
+                                            }
+                                        }
+                                        .goods-title{
+                                            list-style: none;
+                                            padding: 0;
+                                            position: relative;
+                                            transition: .5s ease-out;
+                                            max-height: 22px;
+                                            line-height: 22px;
+                                            color: #333;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            margin: 3px 5px;
+                                            a{
+                                                list-style: none;
+                                                line-height: 22px;
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                                white-space: nowrap;
+                                                outline: none;
+                                                text-decoration: none;
+                                                color: inherit;
+                                                p{
+                                                    list-style: none;
+                                                    line-height: 22px;
+                                                    font-size: 14px;
+                                                    font-weight: 700;
+                                                    white-space: nowrap;
+                                                    color: inherit;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+                                        .goods-introduce{
+                                            list-style: none;
+                                            padding: 0;
+                                            font-weight: 400;
+                                            height: 20px;
+                                            color: #666;
+                                            font-size: 12px;
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            margin: 0 5px 5px;
+                                        }
+                                        .m-priceitem{
+                                            list-style: none;
+                                            padding: 0;
+                                            height: 22px;
+                                            overflow: hidden;
+                                            white-space: normal;
+                                            line-height: 22px;
+                                            margin: 0 5px;
+                                            color: rgb(255, 30, 50);
+                                            .price{
+                                                list-style: none;
+                                                white-space: normal;
+                                                line-height: 22px;
+                                                color: rgb(255, 30, 50);
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                                .rmb{
+                                                    list-style: none;
+                                                    white-space: normal;
+                                                    line-height: 22px;
+                                                    color: rgb(255, 30, 50);
+                                                    font-style: normal;
+                                                    font-size: 12px;
+                                                    font-weight: 400;
+                                                }
+                                            }
+                                            del{
+                                                list-style: none;
+                                                white-space: normal;
+                                                line-height: 22px;
+                                                font-size: 12px;
+                                                color: #999;
+                                                text-decoration: line-through;
+                                            }
+                                        }
+                                        .goods-btn{
+                                            list-style: none;
+                                            white-space: nowrap;
+                                            outline: none;
+                                            text-decoration: none;
+                                            color: #51b8f1;
+                                            position: absolute;
+                                            bottom: 10px;
+                                            height: 22px;
+                                            line-height: 22px;
+                                            right: 5px;
+                                            .goods-btn-img{
+                                                list-style: none;
+                                                white-space: nowrap;
+                                                color: #51b8f1;
+                                                line-height: 22px;
+                                                border: 0;
+                                                vertical-align: middle;
+                                                display: inline-block;
+                                                width: 27px;
+                                                height: 27px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+// 页脚
+#foot{
+    width: 100%;
+    float:left;
+    #footBgWrap1{
+        color: #333;
+        margin: 0;
+        padding: 0;
+        margin-top: 80px;
+        background: #fff;
+        border-top: 1px solid #eaeaea;
+        .box{
+            padding: 0;
+            background-color: transparent;
+            text-align: left;
+            font-size: inherit;
+            color: inherit;
+            cursor: default;
+            display: block;
+            width: 1100px;
+            margin: 0 auto;
+            #btmlist{
+                text-align: left;
+                font-size: inherit;
+                color: inherit;
+                cursor: default;
+                margin: 0;
+                padding: 49px 0;
+                border-bottom: 1px solid #eaeaea;
+                zoom: 1;
+                ul{
+                    text-align: left;
+                    font-size: inherit;
+                    color: inherit;
+                    cursor: default;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    zoom: 1;
+                    li{
+                        font-size: inherit;
+                        color: inherit;
+                        cursor: default;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        float: left;
+                        width: 233px;
+                        margin-left: 42px;
+                        .btmIcon{
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            width: 44px;
+                            height: 44px;
+                            border-radius: 50%;
+                            border: 2px solid #d6d6d6;
+                            text-align: center;
+                            line-height: 44px;
+                            font-size: 20px;
+                            font-weight: 700;
+                            display: inline-block;
+                            float: left;
+                            margin-right: 12px;
+                        }
+                        .tit{
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            display: block;
+                            line-height: 22px;
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                        .desc{
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            display: block;
+                            line-height: 22px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footBgWrap2{
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        margin-top: 0;
+        border-top: none;
+        height: 263px;
+        .box{
+            padding: 0;
+            background-color: transparent;
+            text-align: left;
+            font-size: inherit;
+            color: inherit;
+            cursor: default;
+            display: block;
+            width: 1100px;
+            margin: 0 auto;
+            #guideList{
+                text-align: left;
+                font-size: inherit;
+                color: inherit;
+                cursor: default;
+                margin: 0;
+                padding: 45px 0 90px;
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    zoom: 1;
+                    .first{
+                        font-size: inherit;
+                        color: inherit;
+                        cursor: default;
+                        list-style: none;
+                        margin: 0;
+                        float: left;
+                        padding: 0 0 0 21px;
+                        height: 128px;
+                        width: 218px;
+                        padding-right: 40px;
+                        padding-left: 0;
+                        .logo_kaola_new{
+                            font-size: inherit;
+                            list-style: none;
+                            color: #333;
+                            display: block;
+                            width: 220px;
+                            height: 43px;
+                            line-height: 45px;
+                            margin-bottom: 20px;
+                            outline: none;
+                            cursor: pointer;
+                            z-index: 9;
+                            background: url(../img/footlogo.jpg) no-repeat;
+                            background-size: 210px auto;
+                            text-decoration: none;
+                        }
+                        .focuson{
+                            font-size: inherit;
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            height: 32px;
+                            .itm{
+                                font-size: inherit;
+                                list-style: none;
+                                outline: none;
+                                color: #333;
+                                text-decoration: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                position: relative;
+                                margin-left: 10px;
+                                cursor: pointer;
+                                .w-icon{
+                                    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,\5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+                                    font-size: inherit;
+                                    list-style: none;
+                                    color: #333;
+                                    cursor: pointer;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    background: url(../img/footwb2.jpg) no-repeat;
+                                    display: inline-block;
+                                    width: 32px;
+                                    height: 32px;
+                                    background-position: 50%;
+                                    background-repeat: no-repeat;
+                                }
+                                .weixin-icon{
+                                    background: url(../img/footwx.jpg) no-repeat;
+
+                                }
+                                .m-notice{
+                                    font-size: inherit;
+                                    list-style: none;
+                                    cursor: pointer;
+                                    background: #fff;
+                                    text-align: center;
+                                    color: #333;
+                                    border: 1px solid #ededee;
+                                    padding: 10px;
+                                    position: absolute;
+                                    left: -44px;
+                                    top: 42px;
+                                    display: none;
+                                    z-index: 10;
+                                    img{
+                                        font-size: inherit;
+                                        list-style: none;
+                                        cursor: pointer;
+                                        text-align: center;
+                                        color: #333;
+                                        width: 100px;
+                                        height: 100px;
+                                        border: 0;
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .f-wd100{
+                        font-size: inherit;
+                        width: 101px;
+                        color: inherit;
+                        cursor: default;
+                        list-style: none;
+                        margin: 0;
+                        float: left;
+                        padding: 0 0 0 21px;
+                        height: 128px;
+                        width: 101px;
+                        dl{
+                            font-size: inherit;
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            width: 80px;
+                            margin: 0;
+                            padding: 0;
+                            dt{
+                                font-size: inherit;
+                                color: inherit;
+                                cursor: default;
+                                list-style: none;
+                                padding: 0;
+                                margin: -4px 0 10px;
+                                em{
+                                    color: inherit;
+                                    cursor: default;
+                                    list-style: none;
+                                    font-style: normal;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                }
+                            }
+                            dd{
+                                font-size: inherit;
+                                color: inherit;
+                                cursor: default;
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+                                line-height: 29px;
+                                a{
+                                    font-size: 12px;
+                                    list-style: none;
+                                    line-height: 29px;
+                                    outline: none;
+                                    text-decoration: none;
+                                    color: #333;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .item{
+                        font-size: inherit;
+                        color: inherit;
+                        cursor: default;
+                        list-style: none;
+                        margin: 0;
+                        height: 128px;
+                        width: 108px;
+                        padding: 0;
+                        text-align: center;
+                        float: left;
+                        margin-left: 10px;
+                        img{
+                            font-size: inherit;
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            text-align: center;
+                            width: 108px;
+                            height: 108px;
+                            border: 0;
+                            vertical-align: middle;
+                            display: inline-block;
+                            margin: 0 0 6px;
+                        }
+                        span{
+                            font-size: 12px;
+                            color: inherit;
+                            cursor: default;
+                            list-style: none;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footBgWrap3{
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        margin-top: 0;
+        border-top: none;
+        #aboutNEST{
+            margin: 0;
+            position: relative;
+            padding: 20px 0;
+            background: #333;
+            line-height: 26px;
+            text-align: center;
+            color: #c2c2c2;
+            a{
+                line-height: 26px;
+                text-align: center;
+                outline: none;
+                text-decoration: none;
+                color: #c2c2c2;
+            }
+            .sep{
+                line-height: 26px;
+                text-align: center;
+                color: #c2c2c2;
+            }
+            .m-license{
+                line-height: 26px;
+                text-align: center;
+                color: #c2c2c2;
+                margin-left: 20px;
+            }
+        }
+    }
+}

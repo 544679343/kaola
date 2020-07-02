@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/shopcar.css">
+    <link rel="stylesheet" href="./style/reset.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav id="topNav">
+        <div id="topNavWrap">
+            <div id="topNavLeft">
+                <span>考拉欢迎你！</span>
+                <a class="login" href="#">登录</a>
+                <span class="sep">|</span>
+                <a href="#">免费注册</a>
+            </div>
+            <div id="topNavLeft2">
+                <a class="app" href="#">手机考拉
+                    <span class="m-notice">
+                        <img id="topNavImg" src="img/topnav.jpg" width="116px" height="116px">
+                        <strong class="txt" style="color:#000;">
+                            新人下载APP
+                            <br>
+                            领10元满减红包
+                        </strong>
+                    </span>
+                </a>
+            </div>
+            <ul id="topNavRight">
+                <li>
+                    <a href="#" id="topQd" class="toplevel">每日签到</a>
+                    <span class="sep">|</span>
+                </li>
+                <li>
+                    <a class="toplevel" href="#" user="true">我的订单</a>
+                    <span class="sep">|</span>
+                </li>
+
+
+                <li class="dropmenu personal" id="j-dropmenuPersonal">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel" href="#">
+                            个人中心
+                            <i class="arr"></i><em class="w-icon w-icon-14" style="display:none;"
+                                id="j-personal_tips"></em>
+                        </a>
+                        <!-- <div class="mcDropMenu">
+                            <a href="#">
+                                <span class="cnt">
+                                    我的优惠券
+                                </span>
+                            </a>
+                            <a href="#" id="j-allowance_top_nav" style="display: none;">
+                                <span class="cnt">我的购物津贴 </span>
+                            </a>
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">我的红包 
+                                    <i class="w-icon w-icon-15" style="display:none;" id="redpacketTip"></i>
+                                </span>
+                            </a>
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">我的考拉豆</span> 
+                            </a>
+                            <span class="spliter"></span> 
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">帐号管理</span> 
+                            </a>
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">我的实名认证</span> 
+                            </a>
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">我的发票抬头</span> 
+                            </a>
+                            <span class="spliter"></span> 
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">我收藏的商品</span> 
+                            </a>
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">我关注的品牌</span> 
+                            </a>
+                            <span class="spliter"></span> 
+                            <a href="#" user="true" data-param="zn=top">
+                                <span class="cnt">
+                                    售后管理 
+                                    <i class="w-icon w-icon-14" style="display:none;" id="j-aftersale_tips"></i>
+                                </span>
+                            </a>
+                        </div> -->
+                    </div>
+                </li>
+
+                <li class="dropmenu service">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder nolink" href="#">客户服务<i class="arr"></i></a>
+                        <!-- <div class="mcDropMenu">
+                            <a class="contact j-openService" id="j-header_nav_open_service">
+                                <i class="w-icon w-icon-contact"></i>联系客服 
+                            </a>
+                            <a class="help" href="#">
+                                <i class="w-icon w-icon-help">&nbsp;</i>帮助中心 
+                            </a>
+                            <a class="j-propertyProtection" href="#">
+                                <i class="act-icon-prp">&nbsp;</i>知识产权保护 
+                            </a>
+                            <a class="rule" href="#">
+                                <i class="w-icon w-icon-rule">&nbsp;</i>
+                                规则中心
+                            </a>
+                        </div> -->
+                    </div>
+                </li> <!-- 话费充值开关 -->
+                <li class="dropmenu recharge">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder nolink" href="#">
+                            充值中心
+                            <i class="arr"></i>
+                        </a>
+                        <!-- <div class="mcDropMenu">
+                            <a href="#" >话费充值 </a>
+                            <a id="gameRecharge" href="#">游戏充值 </a>
+                            <a href="#">AppStore充值卡</a>
+                        </div> -->
+                    </div>
+                </li>
+                <li class="cinform f-hkdn f-hkdnact">
+                    <div class="mcDropMenuBox">
+                        <a class="toplevel topNavHolder nolink" href="#">
+                            消费者权益
+                            <i class="arr"></i>
+                        </a>
+                        <span class="sep">|</span>
+                        <!-- <div class="mcDropMenu">
+                            <a id="customerInform" href="#">消费者告知书</a>
+                        </div> -->
+                    </div>
+                </li>
+                <li class="dropmenu more">
+                    <div class="mcDropMenuBox focuson">
+                        <a class="toplevel" href="#">
+                            更多
+                            <i class="arr"></i>
+                        </a>
+                        <!-- <div class="mcDropMenu">
+                            <a id="j-add_fav_btn" href="#">
+                                收藏本站
+                            </a> 
+                            <a class="wb clearfix" href="#">
+                                <span class="txt">新浪微博</span> 
+                                <span class="m-notice m-notice-1">
+                                    <img src="#" width="100px" height="100px"> 
+                                    <span class="arrow">
+                                        <span class="arr"></span>
+                                        <span class="arr1"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="nolink clearfix" href="#">
+                                <span class="txt">微信公众号</span> 
+                                <span class="m-notice">
+                                    <img src="#" width="100px" height="100px"> 
+                                    <span class="arrow">
+                                        <span class="arr"></span>
+                                        <span class="arr1"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="cooperation" href="#">招商合作</a>
+                        </div> -->
+                    </div>
+                </li>
+                <li><a href="#" class="toplevel">视频内容</a><span class="sep">|</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 搜索 -->
+    <header>
+        <div id="search">
+            <div id="searchWrap">
+                <a href="#" class="logo" title="考拉海购">
+                </a>
+            </div>
+    </header>
+
+    <div id="shopcar">
+        <h3 class="m-mycart">
+            <span class="tt">我的购物车</span>
+        </h3>
+        <div class="head f-cb">
+            <div class="col col1">
+                <input type="checkbox" id="selectAll" name="selectAll" class="u-chk">
+                <label class="lab" for="selectAll">全选</label>
+            </div>
+            <div class="col col2">商品信息</div>
+            <div class="col col3">数量</div>
+            <div class="col col4">单价(元)</div>
+            <div class="col col5">金额(元)</div>
+            <div class="col col6">操作</div>
+        </div>
+        <ul class="productlist">
+            <li class="item">
+                <div class="c-box">
+                    <input type="checkbox" id="p1">
+                </div>
+                <div class="p-pic">
+                    <img src="./images/p01-0.jpg" alt="small">
+                </div>
+                <div class="p-title">
+                    苹果（Apple） MacBook Pro13.3英寸 2018新款/2017款苹果笔记本电脑 18款灰色/256G/带bar/MR9Q2CH/A
+                </div>
+                <div class="p-num">
+                    数量: <input type="number" value="2" min="1" max="20">
+                </div>
+                <div class="p-price">
+                    单价: 12468.00
+                </div>
+                <div class="p-price-sum">
+                    总价: 24936.00
+                </div>
+                <div class="p-del">
+                    <a href="#">删除</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 页脚 -->
+    <div id="foot">
+        <div id="footBgWrap1">
+            <div class="box">
+                <div id="btmlist">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="btmIcon">正</div>
+                            <strong class="tit">正品承诺</strong>
+                            <span class="desc">正品保障 假一赔十</span>
+                        </li>
+                        <li>
+                            <div class="btmIcon">低</div>
+                            <strong class="tit">低价保障</strong>
+                            <span class="desc">缩减中间环节 确保低价</span>
+                        </li>
+                        <li>
+                            <div class="btmIcon">退</div>
+                            <strong class="tit">30天无忧退货</strong>
+                            <span class="desc">国内退货 售后无忧</span>
+                        </li>
+                        <li class="last">
+                            <div class="btmIcon">邮</div>
+                            <strong class="tit">满88包邮</strong>
+                            <span class="desc">部分特殊商品除外</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footBgWrap2">
+            <div class="box">
+                <div id="guideList">
+                    <ul class="clearfix">
+                        <li class="first">
+                            <a href="#" class="logo_kaola_new" title="考拉海购"></a>
+                            <div class="focuson">
+                                <span class="label">关注我们</span>
+                                <a class="itm" href="#">
+                                    <em class="w-icon weibo-icon"></em>
+                                    <span class="m-notice">
+                                        <img src="./img/foot1.jpg">
+                                        <span class="arrow">
+                                            <span class="arr"></span>
+                                            <span class="arr1"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a class="itm nolink" href="#">
+                                    <em class="w-icon weixin-icon"></em>
+                                    <span class="m-notice">
+                                        <img src="./img/foot1.jpg" width="100px" height="100px">
+                                        <span class="arrow">
+                                            <span class="arr"></span>
+                                            <span class="arr1"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="f-wd100" style="margin-left:40px;">
+                            <dl>
+                                <dt><em>考拉保障</em></dt>
+                                <dd><a href="#" title="假一赔十">假一赔十</a></dd>
+                                <dd><a href="#" title="廉正举报">廉正举报</a></dd>
+                            </dl>
+                        </li>
+                        <li class="f-wd100">
+                            <dl>
+                                <dt><em>新手指南</em></dt>
+                                <dd><a href="#" title="购物流程">购物流程</a></dd>
+                                <dd><a href="#" title="支付方式">支付方式</a></dd>
+                                <dd><a href="#" title="通关税费">通关税费</a></dd>
+                                <dd><a href="#" title="常见问题">常见问题</a></dd>
+                            </dl>
+                        </li>
+                        <li class="f-wd100">
+                            <dl>
+                                <dt><em>售后服务</em></dt>
+                                <dd><a href="#" title="售后政策">售后政策</a></dd>
+                                <dd><a href="#" title="退货流程">退货流程</a></dd>
+                                <dd><a href="#" title="特色服务">特色服务</a></dd>
+                                <dd><a title="联系客服" id="j-footer_openService" class="j-openService">联系客服</a></dd>
+                            </dl>
+                        </li>
+                        <li class="f-wd100">
+                            <dl>
+                                <dt><em>物流配送</em></dt>
+                                <dd><a href="#" title="配送方式">配送方式</a></dd>
+                                <dd><a href="#" title="配送服务">配送服务</a></dd>
+                                <dd><a href="#" title="运费标准">运费标准</a></dd>
+                                <dd><a href="#" title="物流跟踪">物流跟踪</a></dd>
+                            </dl>
+                        </li>
+                        <li class="f-wd100">
+                            <dl>
+                                <dt><em>商家服务</em></dt>
+                                <dd><a href="#" title="招商合作">招商合作</a></dd>
+                                <dd><a href="#" title="销售联盟">销售联盟</a></dd>
+                                <dd><a href="#" title="商家成长">商家成长</a></dd>
+                            </dl>
+                        </li>
+                        <li class="f-wd100">
+                            <dl>
+                                <dt><em>关于我们</em></dt>
+                                <dd><a href="#" title="联系我们">联系我们</a></dd>
+                                <dd><a href="#" title="CEO邮箱">CEO邮箱</a></dd>
+                                <dd><a href="#" title="线下店">线下店</a></dd>
+                            </dl>
+                        </li>
+                        <li class="item last">
+                            <img src="./img/foot2.jpg" width="108px" height="108px">
+                            <span>扫描下载手机版</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footBgWrap3">
+            <div class="footBgWrap">
+                <div id="aboutNEST">
+                    <a href="#" title="隐私政策">隐私政策</a>
+                    <span class="sep">- </span>
+                    <a href="#" title="考拉海购">考拉海购</a>
+                    <br>
+                    <span class="m-license">2132133333351655111111111111</span>
+                    <span class="m-license">
+                        <a href="#" title="自营经营者信息">自营经营者信息 </a>
+                    </span>
+                    <span class="m-license">5645619856132546651</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

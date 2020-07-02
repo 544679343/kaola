@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/require.js" data-main="../js/main.shopcar"></script>
+    <style>
+        .productlist {
+            list-style-type: none;
+            overflow: hidden;
+        }
+        
+        .item {
+            border: 1px solid black;
+            margin: 20px;
+            overflow: hidden;
+        }
+        
+        .item>div {
+            float: left;
+            margin: 30px 10px;
+        }
+        
+        .p-pic>img {
+            width: 100px;
+        }
+        
+        .p-title {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="productlist">
+        <li class="item">
+            <div class="c-box">
+                <input type="checkbox" id="p1">
+            </div>
+            <div class="p-pic">
+                <img src="../images/p01-0.jpg" alt="small">
+            </div>
+            <div class="p-title">
+                苹果（Apple） MacBook Pro13.3英寸 2018新款/2017款苹果笔记本电脑 18款灰色/256G/带bar/MR9Q2CH/A
+            </div>
+            <div class="p-num">
+                数量: <input type="number" value="2" min="1" max="20">
+            </div>
+            <div class="p-price">
+                单价: 12468.00
+            </div>
+            <div class="p-price-sum">
+                总价: 24936.00
+            </div>
+            <div class="p-del">
+                <a href="javascript:;">删除</a>
+            </div>
+        </li>
+
+
+    </ul>
+</body>
+
+</html>
