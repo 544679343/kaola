@@ -27,7 +27,7 @@
     if($result->num_rows>0){ // 判断结果中数据大于0行
         // 说明查询到了这个用户名
         echo '<script>alert("用户名已存在");</script>';
-        echo '<script>location.href="./reg.html";</script>';
+        echo '<script>location.href="../src/html/reg.html";</script>';
         $mysqli->close();
         die;
     }
@@ -43,7 +43,7 @@
     
     if($res){
         echo '<script>alert("注册成功");</script>';
-        echo '<script>location.href="./login.html";</script>';
+        echo '<script>location.href="../src/html/login.html";</script>';
     }
     
 ?>

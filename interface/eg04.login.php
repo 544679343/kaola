@@ -2,7 +2,7 @@
     // 注册的业务逻辑
 
     // 1. 连接数据库
-    include('./=conn.php');
+    include('./conn.php');
 
     // 2. 接收前端发过来的数据
     // 3. 验证数据(用户名是否存在)
@@ -23,12 +23,12 @@
     if($result->num_rows>0){ // 判断结果中数据大于0行
         // 说明查询到了这个用户名
         echo '<script>alert("登陆成功");</script>';
-        echo '<script>location.href="./index.html";</script>';
+        echo '<script>location.href="../src/html/index.html";</script>';
         $mysqli->close();
         die;
     }else{
         echo '<script>alert("登陆失败");</script>';
-        echo '<script>location.href="./eg04.login.html";</script>';
+        echo '<script>location.href="../src/html/eg04.login.html";</script>';
         die;
     }
 

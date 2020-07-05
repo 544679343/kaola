@@ -6,7 +6,7 @@ $mysql_conf = array(
     'host'=>'localhost:3306',  // 地址
     'db_user'=>'root', // 用户名
     'db_pass'=>'root', // 密码
-    'db'=>'h5_2003'    // 数据库名
+    'db'=>'users'    // 数据库名
 );
 
 // 连接数据库（登录） mysqli

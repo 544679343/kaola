@@ -8,7 +8,80 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/product.css">
     <link rel="stylesheet" href="../style/reset.css">
-    <script src="../js/require.js" data-main="../js/main.product"></script>
+    <!-- <script src="../js/require.js" data-main="../js/main.product"></script> -->
+    <script src="./public2 copy.js"></script>
+
+    <script>
+        $(function () {
+            var movebox = $('.movebox'),
+                bigpic = $('.bigpic'),
+                big = $('.big'),
+                smallpic = $('.smallpic'),
+                a = $('.ul>li>a');
+            // 1. 绑定事件
+            smallpic.on('mouseover', function () {
+                // 让元素显示
+                movebox.addClass('show');
+                big.addClass('show');
+
+                // movebox的大小计算
+                movebox.css({
+                    width: big.offset().width / bigpic.offset().width * smallpic.offset().width + 'px',
+                    height: big.offset().height / bigpic.offset().height * smallpic.offset().height + 'px'
+                })
+
+
+                // 2.让movebox跟随鼠标移动
+
+                smallpic.on('mousemove', function (ev) {
+                    let top = ev.pageY - smallpic.offset().top - movebox.offset().height * 3 / 2;
+                    let left = ev.pageX - smallpic.offset().left - movebox.offset().width * 3 / 2 - 14;
+                    console.log(ev.pageY)
+                    // 3.比例计算
+
+                    let bl = bigpic.offset().width / smallpic.offset().width; // 小数 大于1的数
+
+
+                    // 边界管理
+                    if (top < 0) {
+                        top = 0;
+                    } else if (top > smallpic.offset().height - movebox.offset().height) {
+                        top = smallpic.offset().height - movebox.offset().height - 2;
+                    }
+
+
+                    if (left < 0) {
+                        left = 0;
+                    } else if (left > smallpic.offset().height - movebox.offset().width) {
+                        left = smallpic.offset().height - movebox.offset().width - 2;
+                        // console.log(left)
+                    };
+
+                    movebox.css({
+                        top: top + 'px',
+                        left: left + 'px'
+                    });
+                    bigpic.css({
+                        top: -top * bl + 'px',
+                        left: -left * bl + 'px'
+
+                    })
+                    // console.log(top);
+                });
+            });
+
+            smallpic.on('mouseout', function () {
+                movebox.removeClass('show');
+                big.removeClass('show');
+            });
+
+            a.tabs({
+                ev: 'mouseover',
+            });
+
+
+        });
+    </script>
 </head>
 
 <body>
@@ -185,7 +258,7 @@
     <header>
         <div id="search">
             <div id="searchWrap">
-                <a href="#" class="logo" title="考拉海购">
+                <a href="#" class="logo" title="考拉海购" data-param="zn=top" data-spm-anchor-id="a2v0d.13659821.0.0">
                 </a>
 
                 <div class="searchBox" id="j-search_ipt_box">
@@ -197,7 +270,7 @@
                             <span class="topsearchboxBackGround">
                                 <span id="topSearchBtn">
                                     <span class="shopSearchBtnTitle">搜全站</span>
-                            </span>
+                                </span>
                             </span>
                             <span class="w-icon w-icon-26"></span>
                         </div>
@@ -2166,7 +2239,112 @@
         </div>
     </nav>
 
+    <div id="main">
+        <div id="mainWrap">
+            <div class="PInfoWrap">
+                <div class="PImgBox">
+                    <div class="smallpic">
+                        <img src="../images/listgood1.jpg" alt="">
+                        <div class="movebox hide"></div>
+                    </div>
+                    <div class="li_list">
+                        <ul class="ul">
+                            <li data-type="tabs" class="actived">
+                                <a href="#">
+                                    <img src="../images/listgood0.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/listgood1-0.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/listgood2-0.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/listgood3-0.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/listgood4-0.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="big hide">
+                        <img src="../images/listgood1.jpg" alt="" class="bigpic">
+                    </div>
+                </div>
+                <dl class="PInfo">
+                    <dt class="PTags">
+                        <i class="selftag tag">自营</i>
+                        <i class="crosstag tag">跨境</i>
+                    </dt>
+                    <dt class="product-title">
+                        <span>新西兰原装进口&nbsp;a2&nbsp;白金版&nbsp;婴儿配方奶粉&nbsp;1段(0-6个月)&nbsp;900克/罐</span>
+                    </dt>
+                    <dt class="subTit">源自新西兰a2™牧场，原罐原装进口，甄选奶牛产A2好奶，A2型*蛋白质是自然源初的牛奶蛋白质，是源自乳汁中的亲和蛋白。呵护宝宝娇嫩肠胃。</dt>
+                    <dd class="m-price-wrap">
+                        <div class="m-price">
+                            <span class="m-line-title">售价</span>
 
+                            <div class="m-price-cnt">
+                                <span class="PInfo_r currentPrice">¥<span>230.00</span></span>
+
+                                <span class="m-memberLabel">特价</span>
+                                <span class="marketPrice">
+                                    参考价&nbsp;&nbsp;¥<span>240.00</span>
+                                </span>
+                            </div>
+                        </div>
+                    </dd>
+                    <div class="m-buyBox">
+                        <span class="m-line-title">数量</span>
+                        <em id="j_buyboxnum" class="buybox" name="js_buyBox">
+                            <span class="ctrnum-wrap">
+                                <input type="number" autocomplete="off" class="ctrnum-qty" name="goods[0].tempBuyAmount"
+                                    value="1">
+                            </span>
+                            <span id="js_dometxt" class="domeTips z-isRed">单日限购20件</span>
+                        </em>
+                    </div>
+                    <dd>
+                        <form id="j-formEl" method="post" action="//buy.kaola.com/order/confirm.html?from=detailfp">
+                            <div class="buynowonly-wrap clearfix">
+                                <span class="f-fl m-line-title fl m-line-am-34">说明</span>
+                                <ul class="buynowonly-list">
+                                    <li class="f-fl">
+                                        <i class=""></i>
+                                        正品保障
+                                    </li>
+                                    <li class="f-fl">
+                                        <i class="unsupport"></i>
+                                        不支持7天无理由退货
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="buyBtns">
+                                <a href="#" hidefocus="true" class="j-buynow-btn" id="buyBtn">立即购买</a>
+                                <a hidefocus="true" class="j-add2cart-btn" id="addCart" href="#;"><span
+                                        class="sign icon-cart20 icon-cart"></span>加入购物车</a>
+                                <a href="#" class="m-favbtn m-favbtn-s" id="auto-id-1593762723997"
+                                    style="visibility: visible;">
+                                    <i class="iconfont ic icon-heart" style="display: none;"></i>
+                                    <i class="iconfont ic icon-heart-hollow"></i>
+                                    <span class="txt">收藏</span>
+                                </a>
+                            </div>
+                        </form>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -2215,8 +2393,8 @@
                                         <img src="../images/foot1.jpg">
                                         <span class="arrow">
                                             <span class="arr"></span>
-                                    <span class="arr1"></span>
-                                    </span>
+                                            <span class="arr1"></span>
+                                        </span>
                                     </span>
                                 </a>
                                 <a class="itm nolink" href="#">
@@ -2225,8 +2403,8 @@
                                         <img src="../images/foot1.jpg" width="100px" height="100px">
                                         <span class="arrow">
                                             <span class="arr"></span>
-                                    <span class="arr1"></span>
-                                    </span>
+                                            <span class="arr1"></span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -2308,5 +2486,7 @@
     </div>
 
 </body>
+
+</html>
 
 </html>
