@@ -53,6 +53,7 @@ body {
   *top: 42px;
   padding: 5px 5px 0;
   display: none;
+  background-color: #fff;
 }
 #topNav #topNavLeft2 .app .m-notice .txt {
   display: block;
@@ -61,6 +62,7 @@ body {
   color: #ff1e32;
   line-height: 18px;
   font-weight: 400;
+  text-align: center;
 }
 #topNav #topNavLeft2 .app .m-notice img {
   font-size: 12px;
@@ -72,6 +74,9 @@ body {
   vertical-align: middle;
   display: inline-block;
 }
+#topNav #topNavLeft2 .app:hover .m-notice {
+  display: block;
+}
 #topNav #topNavRight {
   font-size: 12px;
   float: right;
@@ -81,14 +86,234 @@ body {
 #topNav #topNavRight li {
   float: left;
 }
+#topNav #topNavRight .dropmenu {
+  color: #999;
+  line-height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  zoom: 1;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox {
+  color: #999;
+  line-height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 202;
+  border: 1px solid transparent;
+  left: -3px;
+  top: -1px;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox .toplevel {
+  line-height: 30px;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  zoom: 1;
+  padding: 0 24px 0 16px!important;
+  color: #999;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox .toplevel .arr {
+  list-style: none;
+  color: #999;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  margin-top: -2px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-color: #999 transparent transparent;
+  border-style: solid dashed dashed;
+  border-width: 4px 4px 0;
+  transition: transform 0.2s ease-in;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox .toplevel .w-icon {
+  line-height: 30px;
+  list-style: none;
+  color: #999;
+  font-style: normal;
+  font-weight: 500;
+  background: url(/res/images/node_modules/@kaola/web.css/images/icon1-832edc2b58.png) no-repeat;
+  width: 6px;
+  height: 6px;
+  background-position: -65px -220px;
+  position: absolute;
+  right: 8px;
+  top: -1px;
+  display: none;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox .mcDropMenu {
+  color: #999;
+  line-height: 30px;
+  list-style: none;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e8e8ea;
+  position: absolute;
+  left: -1px;
+  top: 30px;
+  border-top: 0;
+  padding: 4px 15px 12px 14px;
+  display: none;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox .mcDropMenu a {
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  display: block;
+  word-wrap: normal;
+  white-space: nowrap;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+}
+#topNav #topNavRight .dropmenu .mcDropMenuBox .mcDropMenu a .cnt {
+  list-style: none;
+  white-space: nowrap;
+  line-height: 28px;
+  cursor: pointer;
+  position: relative;
+  zoom: 1;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox {
+  color: #999;
+  line-height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 202;
+  border: 1px solid transparent;
+  left: -3px;
+  top: -1px;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox .toplevel {
+  line-height: 30px;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  zoom: 1;
+  padding: 0 24px 0 16px!important;
+  color: #999;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox .toplevel .arr {
+  list-style: none;
+  color: #999;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  margin-top: -2px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-color: #999 transparent transparent;
+  border-style: solid dashed dashed;
+  border-width: 4px 4px 0;
+  transition: transform 0.2s ease-in;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox .toplevel .w-icon {
+  line-height: 30px;
+  list-style: none;
+  color: #999;
+  font-style: normal;
+  font-weight: 500;
+  background: url(/res/images/node_modules/@kaola/web.css/images/icon1-832edc2b58.png) no-repeat;
+  width: 6px;
+  height: 6px;
+  background-position: -65px -220px;
+  position: absolute;
+  right: 8px;
+  top: -1px;
+  display: none;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox .mcDropMenu {
+  color: #999;
+  line-height: 30px;
+  list-style: none;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e8e8ea;
+  position: absolute;
+  left: -1px;
+  top: 30px;
+  border-top: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  padding: 4px 15px 12px 14px;
+  display: none;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox .mcDropMenu a {
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  display: block;
+  word-wrap: normal;
+  white-space: nowrap;
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+}
+#topNav #topNavRight .cinform .mcDropMenuBox .mcDropMenu a .cnt {
+  list-style: none;
+  white-space: nowrap;
+  line-height: 28px;
+  cursor: pointer;
+  position: relative;
+  zoom: 1;
+}
 #topNav #topNavRight .toplevel {
   padding: 0 14px 0 8px;
+}
+#topNav #topNavRight .dropmenu:hover {
+  background-color: #fff;
+}
+#topNav #topNavRight .dropmenu:hover .mcDropMenu {
+  display: block;
+}
+#topNav #topNavRight .dropmenu:hover .mcDropMenu a:hover {
+  color: red;
+}
+#topNav #topNavRight .dropmenu:hover .dropmenu {
+  color: red;
+}
+#topNav #topNavRight .dropmenu:hover .toplevel:hover {
+  color: red;
+}
+#topNav #topNavRight .cinform:hover {
+  background-color: #fff;
+}
+#topNav #topNavRight .cinform:hover .mcDropMenu {
+  display: block;
+}
+#topNav #topNavRight .cinform:hover .mcDropMenu a:hover {
+  color: red;
+}
+#topNav #topNavRight .cinform:hover .dropmenu {
+  color: red;
+}
+#topNav #topNavRight .cinform:hover .toplevel:hover {
+  color: red;
 }
 #topNav .login {
   margin-left: 16px;
 }
 #topNav a {
   color: #999;
+}
+#topNav a:hover {
+  color: #fff;
 }
 #search {
   background: #fff;
@@ -155,7 +380,6 @@ body {
   vertical-align: middle;
   display: inline-block;
   outline: none;
-  font: 12px/1.5 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   width: 410px;
   height: 24px;
   line-height: 24px;
@@ -376,7 +600,6 @@ body {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  padding: 0 20px 0 4px;
   display: none;
 }
 #topTabBox #topTab .menu .menu1 .t {
@@ -453,7 +676,6 @@ body {
   top: 40px;
   left: 164px;
   width: 930px;
-  overflow: hidden;
   max-height: 459px;
   height: 459px;
   background: #fff;
@@ -558,7 +780,6 @@ body {
   line-height: 34px;
   font-size: 14px;
   font-weight: 700;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
   text-decoration: none;
   display: inline;
@@ -685,6 +906,21 @@ body {
   width: 215px;
   height: 88px;
 }
+#topTabBox #topTab .menu .menu1:hover {
+  background: #fff;
+}
+#topTabBox #topTab .menu .menu1:hover .t {
+  color: red;
+}
+#topTabBox #topTab .menu .menu1:hover .icon {
+  display: none;
+}
+#topTabBox #topTab .menu .menu1:hover .iconhv {
+  display: inline-block;
+}
+#topTabBox #topTab .menu .menu1:hover .card {
+  display: block;
+}
 #banner {
   margin: 0 ;
   padding: 0;
@@ -718,7 +954,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
-#banner #bannerWrap #banneri .bannerimg #picBox {
+#banner #bannerWrap #picBox {
   white-space: normal;
   margin: 0;
   padding: 0;
@@ -728,7 +964,7 @@ body {
   user-select: none;
   height: 505px;
 }
-#banner #bannerWrap #banneri .bannerimg #picBox #show_pic {
+#banner #bannerWrap #picBox #show_pic {
   white-space: normal;
   font-size: 0;
   user-select: none;
@@ -741,12 +977,18 @@ body {
   margin-left: -960px;
   height: 505px;
 }
-#banner #bannerWrap #banneri .bannerimg #picBox #show_pic li {
+#banner #bannerWrap #picBox #show_pic li {
+  color: #333;
+  white-space: normal;
+  font-size: 0;
+  user-select: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
   -webkit-transition: opacity 0.1s ease;
-  opacity: 1;
-  z-index: 10;
 }
-#banner #bannerWrap #banneri .bannerimg #picBox #show_pic li .itm {
+#banner #bannerWrap #picBox #show_pic li .itm {
   white-space: normal;
   font-size: 0;
   user-select: none;
@@ -755,7 +997,7 @@ body {
   text-decoration: none;
   color: #51b8f1;
 }
-#banner #bannerWrap #banneri .bannerimg #picBox #show_pic li .itm .showImg {
+#banner #bannerWrap #picBox #show_pic li .itm .showImg {
   white-space: normal;
   font-size: 0;
   user-select: none;
@@ -766,6 +1008,114 @@ body {
   display: inline-block;
   width: 1920px;
   height: 505px;
+}
+#banner #bannerWrap #picBox .listp {
+  color: #333;
+  white-space: normal;
+  font-size: 0;
+  user-select: none;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  position: absolute;
+  width: 920px;
+  margin-left: -345px;
+  left: 50%;
+  bottom: 65px;
+  z-index: 11;
+}
+#banner #bannerWrap #picBox .listp li {
+  outline: none;
+  overflow: hidden;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0 5px;
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  background: none;
+  margin-left: 0;
+  white-space: normal;
+  user-select: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  color: #51b8f1;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+}
+#banner #bannerWrap #picBox .listp .active {
+  background-color: red;
+}
+#banner #bannerWrap #picBox .control {
+  color: #333;
+  white-space: normal;
+  font-size: 0;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  z-index: 11;
+}
+#banner #bannerWrap #picBox .control div {
+  color: #333;
+  font: 12px/1.5 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
+  white-space: normal;
+  font-size: 0;
+  user-select: none;
+  padding: 0;
+  position: relative;
+  zoom: 1;
+  width: 1090px;
+  margin: 0 auto;
+}
+#banner #bannerWrap #picBox .control div .prev {
+  white-space: normal;
+  font-size: 0;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  text-decoration: none;
+  color: #51b8f1;
+  position: absolute;
+  top: 0;
+  margin: -34px 0 0;
+  width: 34px;
+  height: 68px;
+  background: url(../images/prevnext.jpg) no-repeat;
+  background-position: -625px -68px;
+  left: 169px;
+}
+#banner #bannerWrap #picBox .control div .next {
+  white-space: normal;
+  font-size: 0;
+  user-select: none;
+  outline: none;
+  text-decoration: underline;
+  color: #51b8f1;
+  position: absolute;
+  top: 0;
+  margin: -34px 0 0;
+  width: 34px;
+  height: 68px;
+  background: url(../images/prevnext.jpg) no-repeat;
+  right: 0;
+  display: block;
+  background-position: -670px -153px;
 }
 #banner #bannerWrap #bannertab1 {
   white-space: normal;
@@ -1605,7 +1955,6 @@ body {
 #foot #footBgWrap2 .box #guideList ul .first .focuson .itm {
   font-size: inherit;
   list-style: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
   color: #333;
   text-decoration: none;
@@ -1616,7 +1965,6 @@ body {
   cursor: pointer;
 }
 #foot #footBgWrap2 .box #guideList ul .first .focuson .itm .w-icon {
-  font: 12px/1.5 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: inherit;
   list-style: none;
   color: #333;
@@ -1767,7 +2115,6 @@ body {
 #foot #footBgWrap3 #aboutNEST a {
   line-height: 26px;
   text-align: center;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
   text-decoration: none;
   color: #c2c2c2;

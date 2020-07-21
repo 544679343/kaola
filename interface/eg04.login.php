@@ -28,7 +28,7 @@
         die;
     }else{
         echo '<script>alert("登陆失败");</script>';
-        echo '<script>location.href="../src/html/eg04.login.html";</script>';
+        echo '<script>location.href="../src/html/login.html";</script>';
         die;
     }
 

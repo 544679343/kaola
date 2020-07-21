@@ -10,9 +10,7 @@
     width: 1000px;
     margin: 0 auto;
 }
-.miss{
-    display: none;
-}
+
 body{
     min-width: 1090px;
     min-height: 100%;
@@ -58,6 +56,7 @@ body{
                 *top: 42px;
                 padding: 5px 5px 0;
                 display: none;
+                background-color: #fff;
                 .txt {
                     display: block;
                     padding: 4px 0;
@@ -65,6 +64,7 @@ body{
                     color: #ff1e32;
                     line-height: 18px;
                     font-weight: 400;
+                    text-align: center;
                 }
                 img{
                     border: 0;
@@ -80,17 +80,245 @@ body{
                 
             }
         }
+        .app:hover{
+            .m-notice{
+                display:block;
+            }
+        }
     }
     #topNavRight{
         font-size: 12px;
         float: right;
         position: relative;
         right: -3px;
-        li {
+        li{
             float: left;
+        }
+        .dropmenu{
+            color: #999;
+            line-height: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            position: relative;
+            zoom: 1;
+            .mcDropMenuBox{
+                color: #999;
+                line-height: 30px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                z-index: 202;
+                border: 1px solid transparent;
+                left: -3px;
+                top: -1px;
+                .toplevel{
+                    line-height: 30px;
+                    list-style: none;
+                    outline: none;
+                    text-decoration: none;
+                    position: relative;
+                    zoom: 1;
+                    padding: 0 24px 0 16px!important;
+                    color: #999;
+                    .arr{
+                        list-style: none;
+                        color: #999;
+                        font-style: normal;
+                        font-weight: 500;
+                        position: absolute;
+                        right: 14px;
+                        top: 50%;
+                        margin-top: -2px;
+                        width: 0;
+                        height: 0;
+                        font-size: 0;
+                        line-height: 0;
+                        border-color: #999 transparent transparent;
+                        border-style: solid dashed dashed;
+                        border-width: 4px 4px 0;
+                        transition: transform .2s ease-in;
+                    }
+                    .w-icon{
+                        line-height: 30px;
+                        list-style: none;
+                        color: #999;
+                        font-style: normal;
+                        font-weight: 500;
+                        background: url(/res/images/node_modules/@kaola/web.css/images/icon1-832edc2b58.png) no-repeat;
+                        width: 6px;
+                        height: 6px;
+                        background-position: -65px -220px;
+                        position: absolute;
+                        right: 8px;
+                        top: -1px;
+                        display: none;
+                    }
+                }
+                .mcDropMenu{
+                    color: #999;
+                    line-height: 30px;
+                    list-style: none;
+                    margin: 0;
+                    background: #fff;
+                    border: 1px solid #e8e8ea;
+                    position: absolute;
+                    left: -1px;
+                    top: 30px;
+                    border-top: 0;
+                    padding: 4px 15px 12px 14px;
+                    display: none;
+                    a{
+                        list-style: none;
+                        outline: none;
+                        text-decoration: none;
+                        display: block;
+                        word-wrap: normal;
+                        white-space: nowrap;
+                        height: 28px;
+                        line-height: 28px;
+                        cursor: pointer;
+                        
+                        .cnt{
+                            list-style: none;
+                            white-space: nowrap;
+                            line-height: 28px;
+                            cursor: pointer;
+                            
+                            position: relative;
+                            zoom: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .cinform{
+            .mcDropMenuBox{
+                color: #999;
+                line-height: 30px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                z-index: 202;
+                border: 1px solid transparent;
+                left: -3px;
+                top: -1px;
+                .toplevel{
+                    line-height: 30px;
+                    list-style: none;
+                    outline: none;
+                    text-decoration: none;
+                    position: relative;
+                    zoom: 1;
+                    padding: 0 24px 0 16px!important;
+                    color: #999;
+                    .arr{
+                        list-style: none;
+                        color: #999;
+                        font-style: normal;
+                        font-weight: 500;
+                        position: absolute;
+                        right: 14px;
+                        top: 50%;
+                        margin-top: -2px;
+                        width: 0;
+                        height: 0;
+                        font-size: 0;
+                        line-height: 0;
+                        border-color: #999 transparent transparent;
+                        border-style: solid dashed dashed;
+                        border-width: 4px 4px 0;
+                        transition: transform .2s ease-in;
+                    }
+                    .w-icon{
+                        line-height: 30px;
+                        list-style: none;
+                        color: #999;
+                        font-style: normal;
+                        font-weight: 500;
+                        background: url(/res/images/node_modules/@kaola/web.css/images/icon1-832edc2b58.png) no-repeat;
+                        width: 6px;
+                        height: 6px;
+                        background-position: -65px -220px;
+                        position: absolute;
+                        right: 8px;
+                        top: -1px;
+                        display: none;
+                    }
+                }
+                .mcDropMenu{
+                    color: #999;
+                    line-height: 30px;
+                    list-style: none;
+                    margin: 0;
+                    background: #fff;
+                    border: 1px solid #e8e8ea;
+                    position: absolute;
+                    left: -1px;
+                    top: 30px;
+                    border-top: 0;
+                    box-shadow: 0 1px 1px rgba(0,0,0,.12);
+                    padding: 4px 15px 12px 14px;
+                    display: none;
+                    a{
+                        list-style: none;
+                        outline: none;
+                        text-decoration: none;
+                        display: block;
+                        word-wrap: normal;
+                        white-space: nowrap;
+                        height: 28px;
+                        line-height: 28px;
+                        cursor: pointer;
+                        .cnt{
+                            list-style: none;
+                            white-space: nowrap;
+                            line-height: 28px;
+                            cursor: pointer;
+                            position: relative;
+                            zoom: 1;
+                        }
+                    }
+                }
+            }
         }
         .toplevel{
             padding: 0 14px 0 8px;
+        }
+        .dropmenu:hover{
+            background-color: #fff;
+            .mcDropMenu{
+                display: block;
+                a:hover{
+                    color: red;
+                }
+            }
+            .dropmenu{
+                color: red;
+            }
+            .toplevel:hover{
+                color: red;
+            }
+
+            
+        }
+        .cinform:hover{
+            background-color: #fff;
+            .mcDropMenu{
+                display: block;
+                a:hover{
+                    color: red;
+                }
+            }
+            .dropmenu{
+                color: red;
+            }
+            .toplevel:hover{
+                color: red;
+            }
         }
     }
     
@@ -99,6 +327,9 @@ body{
     }
     a{
         color: #999;
+    }
+    a:hover{
+        color: #fff;
     }
     
 }
@@ -356,12 +587,11 @@ body{
             color: #fff;
             font-size: 14px;
             text-align: center;
-            cursor: pointer;
             margin: 0;
             padding: 0;
             list-style: none;
-            background: linear-gradient(to right,#f00,#ff3264);
             display: none;
+            background: linear-gradient(to right,#f00,#ff3264);
             .menu1{
                 color: #fff;
                 font-size: 14px;
@@ -402,7 +632,6 @@ body{
                     width: 20px;
                     height: 20px;
                     vertical-align: middle;
-                    padding: 0 20px 0 4px;
                     display: none;
                 }
                 .t{
@@ -479,7 +708,7 @@ body{
                     top: 40px;
                     left: 164px;
                     width: 930px;
-                    overflow: hidden;
+                    display: none;
                     max-height: 459px;
                     height: 459px;
                     background: #fff;
@@ -711,8 +940,27 @@ body{
                     }
                 }
             }
+            .menu1:hover{
+                background: #fff;
+                .t{
+                    color: red;
+                }
+                .icon{
+                    display: none;
+                }
+                .iconhv{
+                    display: inline-block;
+                }
+                .card{
+                    display: block;
+                }
+            }
         }
-
+        #toplist:hover{
+            .menu{
+                display: block;
+            }
+        }
 
     }
     

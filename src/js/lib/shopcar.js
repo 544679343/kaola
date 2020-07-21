@@ -1,4 +1,4 @@
-let baseUrl = "http://localhost/h5-2003/day35";
+let baseUrl = "http://localhost/H5-2003/program";
 
 define(['jquery', 'cookie'], function($, cookie) {
     return {

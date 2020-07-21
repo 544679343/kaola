@@ -1,7 +1,7 @@
 <?php
     include('./conn.php');
 
-    $sql = "select * from product";
+    $sql = "select * from taobaogoods";
 
     $res = $mysqli->query($sql);
 

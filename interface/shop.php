@@ -3,7 +3,7 @@
 
     $idList = $_REQUEST['idlist'];
 
-    $sql = "select * from product where id in ($idList)";
+    $sql = "select * from taobaogoods where id in ($idList)";
 
     $res = $mysqli->query($sql);
 
