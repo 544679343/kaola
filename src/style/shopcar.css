@@ -128,7 +128,6 @@ body {
   color: #333;
   margin: 0 auto;
   width: 1090px;
-  height: 210px;
   padding: 0;
   border: 1px solid #eaeaea;
 }
@@ -213,15 +212,124 @@ body {
   margin: 20px;
   overflow: hidden;
 }
+#shopcar .productlist .item .c-box input {
+  width: 17px;
+  height: 18px;
+}
 #shopcar .productlist .item div {
   float: left;
+  margin-left: 25px;
+  margin-top: 60px;
+}
+#shopcar .productlist .item .p-pic {
+  float: left;
   margin: 30px 10px;
+}
+#shopcar .productlist .item .p-num {
+  margin-left: -10px;
+  margin-top: 45px;
 }
 #shopcar .productlist .item .p-pic > img {
   width: 100px;
 }
 #shopcar .productlist .item .p-title {
   width: 500px;
+  font-size: 16px;
+}
+#shopcar .totalbox {
+  color: #333;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  min-height: 62px;
+  position: relative;
+  margin-top: 35px;
+  width: 1090px;
+  height: 62px;
+}
+#shopcar .totalbox #totalbar {
+  color: #333;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  bottom: 0;
+  min-width: 820px;
+  z-index: 101;
+  border: 1px solid #eaeaea;
+  position: relative;
+  width: 1090px;
+  height: 62px;
+}
+#shopcar .totalbox #totalbar .ttbar {
+  color: #333;
+  font-size: 12px;
+  margin: 0;
+  width: 1090px;
+  height: 62px;
+  line-height: 62px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+#shopcar .totalbox #totalbar .ttbar .lt {
+  color: #333;
+  font-size: 12px;
+  line-height: 62px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  float: left;
+}
+#shopcar .totalbox #totalbar .ttbar .lt .u-chk {
+  width: 17px;
+  height: 18px;
+  box-sizing: content-box;
+  padding: 0;
+  vertical-align: middle;
+  outline: none;
+  display: inline-block;
+  zoom: 1;
+  margin: -6px 10px 0 12px;
+}
+#shopcar .totalbox #totalbar .ttbar .lt .opt {
+  cursor: pointer;
+  margin-left: 20px;
+}
+#shopcar .totalbox #totalbar .ttbar .rt {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  float: right;
+  padding-right: 140px;
+  line-height: 20px;
+  text-align: right;
+}
+#shopcar .totalbox #totalbar .ttbar .rt .allgoods {
+  color: #333;
+  line-height: 62px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+#shopcar .totalbox #totalbar .ttbar .rt .allgoods .num {
+  color: #e31436;
+  font-weight: 700;
+  font-size: 18px;
+}
+#shopcar .totalbox #totalbar .ttbar .rt .gobuy {
+  outline: none;
+  text-decoration: none;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  bottom: 0;
+  width: 120px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #e31436;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
 }
 #foot {
   width: 100%;
@@ -398,7 +506,7 @@ body {
   cursor: pointer;
 }
 #foot #footBgWrap2 .box #guideList ul .first .focuson .itm .w-icon {
-  font: 12px/1.5 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
+  font-size: 12px;
   font-size: inherit;
   list-style: none;
   color: #333;

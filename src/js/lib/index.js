@@ -93,6 +93,7 @@ $(function () {
         const admin = document.querySelector('.admin');
         const use = document.querySelector('.use');
         const close = document.querySelector('.admin a');
+        
         if (cookie.get('username')) { //存在
             login.style.display = 'none';
             admin.style.display = 'block';

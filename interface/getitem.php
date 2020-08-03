@@ -1,17 +1,26 @@
 <?php
-    include('./conn.php');
+    // include('./conn.php');
 
-    $id = $_REQUEST['id'];
+    // $id = $_REQUEST['id'];
 
-    $sql = "select * from taobaogoods where id='$id'";
+    // $sql = "select * from taobaogoods where id='$id'";
 
-    $res = $mysqli->query($sql);
+    // $res = $mysqli->query($sql);
 
-    $row = $res->fetch_assoc();
+    // $row = $res->fetch_assoc();
 
-    $json = json_encode($row);
+    // $json = json_encode($row);
 
-    echo $json;
+    // echo $json;
 
-    $mysqli->close();
+    // $mysqli->close();
+    include "conn.php";
+    //获取前端传入的sid
+    if(isset($_GET['sid'])){
+        $sid = $_GET['sid'];
+        //利用sid查找对应的数据，返回给前端。
+        $result=$mysqli->query("select * from taobaogoods where sid = $sid");
+        echo json_encode($result->fetch_assoc());
+    }
+    
 ?>

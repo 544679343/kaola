@@ -20,18 +20,22 @@
     
     // 执行sql语句
     $result = $mysqli->query($sql);
-    if($result->num_rows>0){ // 判断结果中数据大于0行
-        // 说明查询到了这个用户名
-        echo '<script>alert("登陆成功");</script>';
-        echo '<script>location.href="../src/html/index.html";</script>';
-        $mysqli->close();
-        die;
-    }else{
-        echo '<script>alert("登陆失败");</script>';
-        echo '<script>location.href="../src/html/login.html";</script>';
-        die;
+    // if($result->num_rows>0){ // 判断结果中数据大于0行
+    //     // 说明查询到了这个用户名
+    //     echo '<script>alert("登陆成功");</script>';
+    //     // echo '<script>location.href="../src/html/index.html";</script>';
+    //     $mysqli->close();
+    //     die;
+    // }else{
+    //     echo '<script>alert("登陆失败");</script>';
+    //     // echo '<script>location.href="../src/html/login.html";</script>';
+    //     die;
+    // }
+    if($result->fetch_assoc()){//匹配成功
+        echo true;
+    }else{//匹配不成功
+        echo false;
     }
-
    
     
 ?>

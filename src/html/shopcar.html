@@ -189,9 +189,11 @@
     </header>
 
     <div id="shopcar">
+
         <h3 class="m-mycart">
             <span class="tt">我的购物车</span>
         </h3>
+
         <div class="head f-cb">
             <div class="col col1">
                 <input type="checkbox" id="selectAll" name="selectAll" class="u-chk">
@@ -203,32 +205,43 @@
             <div class="col col5">金额(元)</div>
             <div class="col col6">操作</div>
         </div>
+
         <ul class="productlist">
-            <li class="item">
-                <div class="c-box">
-                    <input type="checkbox" id="p1">
-                </div>
-                <div class="p-pic">
-                    <img src="../images/p01-0.jpg" alt="small">
-                </div>
-                <div class="p-title">
-                    苹果（Apple） MacBook Pro13.3英寸 2018新款/2017款苹果笔记本电脑 18款灰色/256G/带bar/MR9Q2CH/A
-                </div>
-                <div class="p-num">
-                    数量: <input type="number" value="2" min="1" max="20">
-                </div>
-                <div class="p-price">
-                    单价: 12468.00
-                </div>
-                <div class="p-price-sum">
-                    总价: 24936.00
-                </div>
-                <div class="p-del">
-                    <a href="#">删除</a>
-                </div>
-            </li>
+            
         </ul>
+
+        <div class="totalbox">
+            <div id="totalbar" class="m-total f-cb" style="position: relative; width: 1088px;">
+                <div class="ttbar">
+                    <div class="lt">
+                        <input type="checkbox" class="u-chk" id="selectAll" name="selectAll">
+                        <label class="lab" for="selectAll">全选</label>
+                        <b class="opt">删除选中商品</b>
+                    </div>
+                    <div class="rt">
+                        <p class="allgoods">
+                            已选商品 <em class="num allnum">0</em> 件
+                            <span class="itm">总价(不含运费)：
+                                ¥<em class="num pricenum">0</em>
+                            </span>
+                        </p>
+                        <a class="gobuy ">去结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- <div id="cartbox">
+
+        <div class="m-nocart">
+            <div class="wrap">
+                <p>购物车里空空如也，赶紧去&nbsp;<a href="http://www.kaola.com/">逛逛吧&gt;</a></p>
+                <p style="display: none;">或者您可以先进行&nbsp;<a href="javascript:;">登录&gt;</a></p>
+
+            </div>
+        </div>
+
+    </div> -->
 
 
     <!-- 页脚 -->
@@ -275,8 +288,8 @@
                                         <img src="../images/foot1.jpg">
                                         <span class="arrow">
                                             <span class="arr"></span>
-                                    <span class="arr1"></span>
-                                    </span>
+                                            <span class="arr1"></span>
+                                        </span>
                                     </span>
                                 </a>
                                 <a class="itm nolink" href="#">
@@ -285,8 +298,8 @@
                                         <img src="../images/foot1.jpg" width="100px" height="100px">
                                         <span class="arrow">
                                             <span class="arr"></span>
-                                    <span class="arr1"></span>
-                                    </span>
+                                            <span class="arr1"></span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -367,6 +380,8 @@
 
     </div>
 
+    <script src="../js/public.js"></script>
+    <script src="../js/lib/shopcar.js"></script>
 </body>
 
 </html>

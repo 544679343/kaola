@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/login.css">
+    <script src="../js/public.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/lib/login.js"></script>
 </head>
 
 <body id="index-netease-com">
@@ -38,15 +41,17 @@
                                         <form action="../../interface/eg04.login.php" method="POST">
                                             <div class="form-group">
                                                 <label for="username">用户名</label>
-                                                <input type="text" class="form-control" id="username" placeholder="username" name="username">
+                                                <input type="text" class="form-control" id="username"
+                                                    placeholder="username" name="username">
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="password">密码</label>
-                                                <input type="text" class="form-control" id="password" placeholder="password" name="password">
+                                                <input type="text" class="form-control" id="password"
+                                                    placeholder="password" name="password">
                                             </div>
                                             <div class="form-group">
-                                                <input type="submit" class="btn btn-success btn-block">
+                                                <input type="submit" id="btn" class="btn btn-success btn-block">
                                             </div>
 
                                         </form>
@@ -81,7 +86,8 @@
                         </div>
 
 
-                        <iframe src="https://account.kaola.com.hk/login/3pc-1.html" frameborder="0" style="display: none;"></iframe>
+                        <iframe src="https://account.kaola.com.hk/login/3pc-1.html" frameborder="0"
+                            style="display: none;"></iframe>
 
                     </div>
                 </div>

@@ -767,6 +767,48 @@ body {
   top: 200px;
   left: 0px;
 }
+#main #mainWrap .PInfoWrap .PImgBox .scrollleft {
+  outline: none;
+  font-family: "iconfont";
+  display: inline-block;
+  z-index: 1000;
+  width: 33px;
+  height: 62px;
+  position: absolute;
+  padding: 1px 0;
+  margin: 0;
+  border: 1px solid #eee;
+  text-decoration: none;
+  font-size: 38px;
+  color: #ddd;
+  line-height: 55px;
+  text-align: center;
+  background-color: #fff;
+  left: 0;
+  top: 421px;
+  float: left;
+}
+#main #mainWrap .PInfoWrap .PImgBox .scrollRight {
+  outline: none;
+  font-family: "iconfont";
+  display: inline-block;
+  z-index: 1000;
+  width: 33px;
+  height: 62px;
+  position: absolute;
+  padding: 1px 0;
+  margin: 0;
+  border: 1px solid #eee;
+  text-decoration: none;
+  font-size: 38px;
+  color: #666;
+  line-height: 55px;
+  text-align: center;
+  background-color: #fff;
+  top: 421px;
+  right: 0;
+  float: left;
+}
 #main #mainWrap .PInfoWrap .PImgBox .li_list {
   color: #333;
   font-size: 14px;
@@ -776,8 +818,8 @@ body {
   height: 70px;
   overflow: hidden;
   top: 419px;
-  left: 0px;
-  width: 375px;
+  left: 60px;
+  width: 295px;
 }
 #main #mainWrap .PInfoWrap .PImgBox .li_list .ul {
   color: #333;
@@ -788,10 +830,10 @@ body {
   zoom: 1;
   position: absolute;
   top: 0;
-  padding-left: 10px;
   z-index: 2;
   left: 0px;
   width: 4800px;
+  height: 76px;
 }
 #main #mainWrap .PInfoWrap .PImgBox .li_list .ul li {
   color: #333;
@@ -803,7 +845,7 @@ body {
   height: 70px;
   overflow: hidden;
   float: left;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 #main #mainWrap .PInfoWrap .PImgBox .li_list .ul li a {
   font-size: 14px;
@@ -816,8 +858,7 @@ body {
   zoom: 1;
   height: 64px;
   width: 64px;
-  border: 1px solid #eee;
-  margin: 2px;
+  margin: 0 auto;
 }
 #main #mainWrap .PInfoWrap .PImgBox .li_list .ul li a img {
   font-size: 14px;
@@ -829,7 +870,7 @@ body {
   width: 64px;
 }
 #main #mainWrap .PInfoWrap .PImgBox .li_list .ul .actived {
-  border: 1px solid red;
+  border: 3px solid red;
 }
 #main #mainWrap .PInfoWrap .PImgBox .big {
   color: #333;
@@ -1060,7 +1101,6 @@ body {
   box-sizing: content-box;
 }
 #main #mainWrap .PInfoWrap .PInfo .m-buyBox .buybox .domeTips {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -1083,7 +1123,6 @@ body {
   padding: 0;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buynowonly-wrap {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: 12px;
   margin: 0;
   zoom: 1;
@@ -1093,7 +1132,6 @@ body {
   height: 25px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buynowonly-wrap span {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   float: left;
   display: inline-block;
   width: 75px;
@@ -1105,7 +1143,6 @@ body {
   font-size: 12px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buynowonly-wrap .buynowonly-list {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: 12px;
   color: #666;
   margin: 0;
@@ -1117,7 +1154,6 @@ body {
   margin-left: 0;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buynowonly-wrap .buynowonly-list .f-fl {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: 12px;
   color: #666;
   list-style: none;
@@ -1131,7 +1167,6 @@ body {
   line-height: 18px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buynowonly-wrap .buynowonly-list .f-fl i {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: 12px;
   color: #666;
   list-style: none;
@@ -1147,7 +1182,6 @@ body {
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns {
   color: #333;
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   font-size: 12px;
   margin: 0;
   padding: 0;
@@ -1156,7 +1190,6 @@ body {
   position: relative;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .j-buynow-btn {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   outline: none;
   display: inline-block;
   margin-right: 20px;
@@ -1174,7 +1207,6 @@ body {
   line-height: 46px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .j-add2cart-btn {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   outline: none;
   display: inline-block;
   margin-right: 20px;
@@ -1190,7 +1222,6 @@ body {
   background-color: #e31436;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .j-add2cart-btn .sign {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -1201,7 +1232,6 @@ body {
   margin-right: 5px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .m-favbtn {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   outline: none;
   color: #51b8f1;
   display: inline-block;
@@ -1218,7 +1248,6 @@ body {
   visibility: visible;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .m-favbtn .icon-heart {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   line-height: 28px;
   text-align: center;
   visibility: visible;
@@ -1232,7 +1261,6 @@ body {
   margin-right: 5px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .m-favbtn .icon-heart-hollow {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   line-height: 28px;
   text-align: center;
   visibility: visible;
@@ -1246,7 +1274,6 @@ body {
   margin-right: 5px;
 }
 #main #mainWrap .PInfoWrap .PInfo dd #j-formEl .buyBtns .m-favbtn .txt {
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, tahoma, simsun, \5b8b\4f53;
   line-height: 28px;
   text-align: center;
   visibility: visible;
